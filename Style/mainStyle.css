@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+    }
+
+body{
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #ffffff 0%, #b5e1e6 50%, #b7caec 100%);
+    }
+.para p {
+    font: 1.15rem sans-serif;
+    color:black;
+}
+code {
+  color: blue;
+}
+.card {
+  background-color: #046cea0c;
+}
+section {
+    height: 15%;
+    margin: auto;
+  }
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes bounceX {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+}
+.skills {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+.skills:hover {
+    transform: scale(1.05); /* Expands slightly */
+    animation-fill-mode: none; /* Let animation return naturally */
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.pro:hover {
+  transform: scale(1.05); /* Expands slightly */
+  animation-fill-mode: none; /* Let animation return naturally */
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.pro {
+width: 15em;
+transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+footer, .navbar {
+  background-color: #9ee8f5;;
+}
+.timeless:hover {
+    animation: bounceX 1s infinite;
+}
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 0;
+    font-family: Jost;
+    border-radius: 5px;
+  }
+  
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background: #010e6353;
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+  
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, #03b5a6, #024598, #8A2387);
+      width: 3px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #1e90c9, #068bff, #8A2387);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
